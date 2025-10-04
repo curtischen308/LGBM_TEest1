@@ -1,27 +1,27 @@
 # LGBM_TEest1
 本版本為第三代 (`v3`) 優化流程，整合時間行為、金額異常、通道多樣性等進階特徵，並使用 **LightGBM GPU 加速訓練**，提供高效且穩定的可疑帳戶預測模型。
 ## AI Cup_LGBM/
-├── dataset/ # 官方提供資料
-│ ├── acct_transaction.csv # 交易紀錄
-│ ├── acct_alert.csv # 警示帳戶（標記 1）
-│ └── acct_predict.csv # 要預測的帳號清單
-│
-├── feature_data_v3/ # 特徵工程輸出
-│ └── account_features.csv
-│
-├── train_data_v3/ # 欠採樣後訓練集與模型
-│ ├── train_data.csv
-│ └── lightgbm_model.pkl
-│
-├── results_v3/ # 預測輸出
-│ ├── predict_full.csv # 含預測機率
-│ └── predict_for_submit.csv # 上傳用 (alert_key, predict)
-│
-├── v3/
-│ ├── build_features_v3_behavior.py # 特徵建構 (含時間行為分析)
-│ ├── prepare_trainset_balanced_v3.py # 欠採樣產生訓練集
-│ ├── train_model_LGBM_v3.py # GPU 訓練模型
-│ └── predict_accounts_v3_gpu_final.py # 預測與輸出提交檔
+## ├── dataset/ # 官方提供資料
+## │ ├── acct_transaction.csv # 交易紀錄
+## │ ├── acct_alert.csv # 警示帳戶（標記 1）
+## │ └── acct_predict.csv # 要預測的帳號清單
+## │
+## ├── feature_data_v3/ # 特徵工程輸出
+## │ └── account_features.csv
+## │
+## ├── train_data_v3/ # 欠採樣後訓練集與模型
+## │ ├── train_data.csv
+## │ └── lightgbm_model.pkl
+## │
+## ├── results_v3/ # 預測輸出
+## │ ├── predict_full.csv # 含預測機率
+## │ └── predict_for_submit.csv # 上傳用 (alert_key, predict)
+## │
+## ├── v3/
+## │ ├── build_features_v3_behavior.py # 特徵建構 (含時間行為分析)
+## │ ├── prepare_trainset_balanced_v3.py # 欠採樣產生訓練集
+##  ├── train_model_LGBM_v3.py # GPU 訓練模型
+## │ └── predict_accounts_v3_gpu_final.py # 預測與輸出提交檔
 
 
 
