@@ -1,6 +1,6 @@
 # LGBM_TEest1
 本版本為第三代 (`v3`) 優化流程，整合時間行為、金額異常、通道多樣性等進階特徵，並使用 **LightGBM GPU 加速訓練**，提供高效且穩定的可疑帳戶預測模型。
-AI Cup_LGBM/
+## AI Cup_LGBM/
 ├── dataset/ # 官方提供資料
 │ ├── acct_transaction.csv # 交易紀錄
 │ ├── acct_alert.csv # 警示帳戶（標記 1）
@@ -127,11 +127,11 @@ bash
 # 建立特徵
 python v3/build_features_v3_behavior.py
 
-# 欠採樣建立訓練集
+欠採樣建立訓練集
 python v3/prepare_trainset_balanced_v3.py
 
-# 使用 GPU 訓練模型
+使用 GPU 訓練模型
 python v3/train_model_LGBM_v3.py
 
-# 使用 GPU 預測提交
+使用 GPU 預測提交
 python v3/predict_accounts_v3_gpu_final.py
