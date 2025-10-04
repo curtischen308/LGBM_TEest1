@@ -99,20 +99,21 @@ results_v3/predict_full.csv	含帳號、機率與標籤
 results_v3/predict_for_submit.csv	AI CUP 上傳格式 ✅
 
 
-⚙️ GPU 環境需求
+# ⚙️ GPU 環境需求
 請確認系統安裝：
 
 
-📈 模型表現 (v3 範例結果)
+# 📈 模型表現 (v3 範例結果)
 指標	值
 F1 Score	0.94
 Precision	0.95
 Recall	0.93
 Accuracy	0.94
 最佳 Threshold	0.60
-Confusion Matrix	[[192, 9], [13, 188]]
+Confusion Matrix	
+[[192, 9], [13, 188]]
 
-🏁 最終提交檔格式
+# 🏁 最終提交檔格式
 results_v3/predict_for_submit.csv
 
 alert_key	predict
