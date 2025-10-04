@@ -48,7 +48,7 @@
 ⏱️ 首筆 / 末筆交易時間 (first_txn, last_txn)
 
 
-第二步：資料平衡處理
+### 第二步：資料平衡處理
 檔案： prepare_trainset_balanced_v3.py
 
 
@@ -61,7 +61,7 @@
 輸出： train_data_v3/train_data.csv
 
 
-第三步：訓練 LightGBM 模型 (GPU 版本)
+### 第三步：訓練 LightGBM 模型 (GPU 版本)
 檔案： train_model_LGBM_v3.py
 
 特點：
@@ -79,7 +79,7 @@
 模型檔案：train_data_v3/lightgbm_model.pkl
 
 
-第四步：帳號預測與提交檔產生
+### 第四步：帳號預測與提交檔產生
 檔案： predict_accounts_v3_gpu_final.py
 
 功能：
