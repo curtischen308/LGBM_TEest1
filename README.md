@@ -116,15 +116,8 @@ Confusion Matrix
 # 🏁 最終提交檔格式
 results_v3/predict_for_submit.csv
 
-alert_key	predict
-001a...f29	0
-002b...d64	1
-...	...
 
 
-👨‍💻 使用說明摘要
-bash
-複製程式碼
 # 建立特徵
 python v3/build_features_v3_behavior.py
 
